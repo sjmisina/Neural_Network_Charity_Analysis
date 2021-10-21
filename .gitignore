@@ -5,6 +5,7 @@ __pycache__/
 *starter_code*
 # C extensions
 *.so
+untitled_project/
 
 # Distribution / packaging
 .Python
