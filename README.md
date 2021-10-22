@@ -6,7 +6,7 @@ Data Source Provided: <i><code>charity_data.csv</code></i>
 -----
 ## Overview
 #### Abstract
-From Alphabet Soup’s business team, we received a CSV containing more than 34,000 organizations that have received funding from the charity over the years. The question from the charity is: is there a predictable determination of success for these projects with the support of the charity. Using neural network solutions, we have been tasked to see if there is a better than 75% chance of predicting success based on Alphabet Soup's investment.
+From Alphabet Soup’s business team, we received a CSV containing more than 34,000 organizations that have received funding from the charity over the years. The question posed is: can success of the project be predicted with better than 75% accuracy with the charity's investment?
 
 #### Method
 The received data is imported by Python as a Pandas dataframe. The data is prepared for neural network processing, and output is generated from a multi-layered machine learning model that will produce an accuracy result reflecting the success rate of companies with whom Alphabet Soup has invested.
@@ -40,15 +40,15 @@ The initial model showed that there was a 72.74% chance of success when Alphabet
 ![Test0Result](https://user-images.githubusercontent.com/84740997/138523902-ba350b3d-085c-41af-ad70-c1736aba04bb.jpg)
 
 
-Further testing involved tuned models. Three efforts were made:<br />
+Further testing involved tuned models in an attempt to improve prediction accuracy. Three efforts were made:<br />
 
-Test 1 (added activation option on hidden layers, input values not variable)
+<b>Test</b> 1 *(added activation options on hidden layers)*
 ![Test1Results](https://user-images.githubusercontent.com/84740997/138524116-538cfdb0-612d-48e5-88e2-7f7df0969e67.jpg)
 
-Test 2 (non-sigmoid activation options on all layers, input values not variable, hidden layers from 5 to 10, classifiers <4000 and Applications < 1000 are grouped into 'Other', changed compile options found on tensorflow.org)
+<b>Test 2</b> *(non-sigmoid activation options on all layers, hidden layers randomized from 5 to 10, 'CLASSIFICATION' <4000 and 'APPLICATION_TYPE' < 1000 are grouped into 'Other', changed compile options)*
 ![Test2Results](https://user-images.githubusercontent.com/84740997/138524146-9581afc9-8916-4699-8be8-e2cff0a2ec29.jpg)
 
-Test 3 (added activation options on hidden layers, input dim is variable from 10 to total features)
+<b>Test 3</b> *(added activation options on hidden layers, input is randomized from 10 to maximum total features)*
 ![Test3Results](https://user-images.githubusercontent.com/84740997/138524162-408f2797-e219-46e4-917b-9f42c5f99055.jpg)
 
 To further investigate these tests we recommend alternative, non-sequential hyperparameter models considered. Another means of improving accuracy is to have more datapoints. Although we did not boost success rate to 75%, we have minimized loss using these tuned models.
