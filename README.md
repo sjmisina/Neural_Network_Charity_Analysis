@@ -51,4 +51,4 @@ Further testing involved tuned models in an attempt to improve prediction accura
 <b>Test 3</b> *(added activation options on hidden layers, input is randomized from 10 to maximum total features)*
 ![Test3Results](https://user-images.githubusercontent.com/84740997/138524162-408f2797-e219-46e4-917b-9f42c5f99055.jpg)
 
-To further investigate these tests we recommend alternative, non-sequential hyperparameter models considered. Another means of improving accuracy is to have more datapoints. Although we did not boost success rate to 75%, we have minimized loss using these tuned models.
+To further investigate these tests we recommend alternative, non-sequential hyperparameter models. Another means of improving accuracy is to have more datapoints. Although we did not boost success rate to 75%, we have minimized loss using these tuned models.
